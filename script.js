@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchCitySection = document.querySelector('.search-city')
     const weatherInfoSection = document.querySelector('.weather-info')
 
-    const apiKey = 'ddc673b9a26b6758248b6d82a2f38a51';
+    const apiKey = '';
 
     searchBtn.addEventListener('click', () => {
         if(cityInput.value.trim() != '') {
