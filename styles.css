@@ -139,15 +139,57 @@ body::before{
 .forecast-items-container{
     display: flex;
     gap: 15px;
-    
+    overflow-x: auto; /* Change overflow to overflow-x for horizontal scrolling */
+    padding-bottom: 12px;
 }
+
+.forecast-items-container::-webkit-scrollbar{
+    height: 8px;
+}
+
+.forecast-items-container::-webkit-scrollbar-track{
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 99px;
+}
+
+.forecast-items-container::-webkit-scrollbar-thumb{
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 99px;
+}
+
 .forecast-item{
     min-width: 70px;
     background-color: rgb(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 6px;
+    align-items: center;
+    border-radius: 12px;
+    transition: 0.3s background;
 
+}
+
+.forecast-item:hover{
+    background-color: rgb(255, 255, 255, 0.15);
 }
 
 .forecast-item-img{
     width: 35px;
     height: 35px;
+}
+
+.section-message img{
+    height: 180px;
+    width: fit-content;
+}
+
+.section-message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    margin-top: 25%;
+
 }
